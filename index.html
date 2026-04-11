@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iintoo - Invest Together</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Panel with Illustration -->
+      <div class="left-panel">
+        <div class="logo">
+          <img src="/public/logo.svg" width="100" height="60">
+        </div>
+      </div>
+
+      <!-- Right Panel with Form -->
+      <div class="right-panel">
+        <div class="form-header">
+          <h1>Get intoo it today</h1>
+          <p>There is no charge or obligation upon registration.</p>
+        </div>
+
+        <div class="social-login">
+          <button class="social-btn facebook">
+            <i class="fab fa-facebook-f"></i>
+            Register with Facebook
+          </button>
+          <button class="social-btn linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            Register with LinkedIn
+          </button>
+        </div>
+
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="gus.goodwin@gmail.com"
+                value="gus.goodwin@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="" />
+            </div>
+          </div>
+
+          <div class="investor-type">
+            <h3>What type of investor are you?</h3>
+            <p>Select the type of investor you are below.</p>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="investor" id="individual" checked />
+                <label for="individual">Individual</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="investor" id="business" />
+                <label for="business">Business</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="investor" id="ira" />
+                <label for="ira">IRA</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="investor" id="trust" />
+                <label for="trust">Trust</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <p>
+              I am a natural person investing on my own behalf as a sole owner,
+              joint tenant, or tenant in common.
+            </p>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" />
+            <label for="terms">
+              I agree to the terms and receiving notifications from iintoo
+              <a href="#">view full terms</a>
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
